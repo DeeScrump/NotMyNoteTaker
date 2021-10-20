@@ -22,12 +22,14 @@ What are the steps required to install your project? Provide a step-by-step desc
 
 ## Usage
 Please see screenshots attached
-
+![landing page](./public/assets/images/landingpage.png)
+![landing page](./public/assets/images/notespage.png)
+![landing page](./public/assets/images/savebtnappears.png)
     
 ## Contributions
 The following persons assisted with this project.  If left blank, there were no other contributors.
 - Github Repository:    https://github.com/DeeScrump/NotMyNoteTaker.git
-- Live Deployment Sit:  
+- Live Deployment Sit:  https://notmynotetaker.herokuapp.com/
 
 ## License
 © <2021> Dwight C Kornbluth II
