@@ -27,8 +27,8 @@ Please see screenshots attached
     
 ## Contributions
 The following persons assisted with this project.  If left blank, there were no other contributors.
-- n/a
-- n/a
+- Github Repository:    https://github.com/DeeScrump/NotMyNoteTaker.git
+- Live Deployment Sit:  
 
 ## License
 © <2021> Dwight C Kornbluth II
