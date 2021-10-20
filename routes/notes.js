@@ -11,7 +11,7 @@ route.get('/', (req, res) => {
   
 // POST Route for a new notes
 route.post('/', (req, res) => {
-  console.info(`${req.method} request received to add a note`);
+  console.info(`${req.method} request received to post a note`);
 
   const { title, text } = req.body;
 
@@ -32,21 +32,21 @@ route.post('/', (req, res) => {
   }
 });
 
-// DELETE Route for a specific tip
+// DELETE Route for a specific note id
 route.delete('/:id', (req, res) => {
   const noteId = req.params.id;
-  console.log(noteId);
+  console.info(`${req.method} request received to delete a note`);
   readFromFile('./db/db.json')
     .then((data) => JSON.parse(data))
     .then((json) => {
-      // Make a new array of all tips except the one with the ID provided in the URL
+      // Make a new array of all notes except the one identified to be deleted
       const result = json.filter((title) => title.id !== noteId);
 
       // Save that array to the filesystem
       writeToFile('./db/db.json', result);
 
       // Respond to the DELETE request
-      res.json(`Item ${id} has been deleted 🗑️`);
+      res.json(`Item ${noteId} has been deleted 🗑️`);
     });
 });
 
