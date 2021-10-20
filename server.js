@@ -3,10 +3,8 @@ const path = require('path');
 const apiRoutes = require('./routes');
 
 // Helper methods
-// const uuid = require('./helpers/uuid');
 const PORT = process.env.port || 3001;
 const app = express();
-// const { v4: uuidv4 } = require('uuid');
 
 // Middleware for parsing JSON and urlencoded form data
 app.use(express.json());
